@@ -1,0 +1,5 @@
+cffi==1.17.1
+cryptography==44.0.1
+dlib-bin>=19.24,<21
+pycparser==2.22
+opencv-python
