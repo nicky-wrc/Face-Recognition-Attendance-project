@@ -15,4 +15,4 @@ def recognize_faces(image_path):
         print("Face Descriptor:", list(face_descriptor)[:5], "...") 
 
     if not faces:
-        print("ไม่พบใบหน้าในภาพ")
+        print("ไม่พบใบหน้า")
