@@ -19,18 +19,31 @@
 ## 📂 โครงสร้างโปรเจกต์
 Script_Project/
 │── dataset/ # โฟลเดอร์เก็บรูปภาพของแต่ละบุคคล
+
 │ ├── Worachat/ # ตัวอย่าง: รูปของ Worachat
+
 │ ├── Krit/ # ตัวอย่าง: รูปของ Krit
+
 │ └── Phuchit/ # ตัวอย่าง: รูปของ Phuchit
+
 │
+
 │── templates/ # HTML template สำหรับ Flask
+
 │ └── index.html
+
 │
+
 │── attendance.csv # ไฟล์บันทึกชื่อ + เวลา
+
 │── attendance.py # สคริปต์เปิดกล้องและบันทึกเวลา
+
 │── app.py # Flask Web App (Dashboard)
+
 │── requirements.txt # ไลบรารีที่ใช้
+
 │── README.md # ไฟล์อธิบายโปรเจกต์
+
 
 ---
 
@@ -57,11 +70,16 @@ pip install -r requirements.txt
 ภายใน dataset ให้สร้างโฟลเดอร์ย่อยตามชื่อจริง-นามสกุล เช่น
 dataset/
 ├── Worachat/
+
 │   ├── Worachat1.jpg
+
 ├── Krit/
+
 │   ├── Krit1.jpg
+
 └── Phuchit/
-    ├── Phuchit1.jpg
+
+│    ├── Phuchit1.jpg
 
 รันพร้อมใช้งาน
 
