@@ -1,3 +1,71 @@
+# Face Recognition Attendance Project 🎥🧑‍💻
+
+ระบบลงเวลาการเข้าเรียน/ทำงานด้วยการจดจำใบหน้า (Face Recognition Attendance System)  
+โปรเจกต์นี้พัฒนาด้วย **Python, dlib, OpenCV และ Flask**  
+สามารถตรวจจับใบหน้าแบบเรียลไทม์ บันทึกชื่อและเวลาเข้าเรียนไว้ในไฟล์ CSV และแสดงผลแบบ Dashboard ผ่านเว็บได้
+
+---
+
+## 📌 ฟีเจอร์หลัก
+- ✅ ตรวจจับใบหน้าผ่านกล้อง Webcam
+- ✅ ระบุชื่อบุคคลจาก dataset ที่เตรียมไว้
+- ✅ บันทึกชื่อ + วันที่ + เวลา ลงใน `attendance.csv`
+- ✅ ป้องกันการบันทึกซ้ำ (บันทึกเพียงครั้งเดียวต่อวันต่อคน)
+- ✅ Dashboard (Flask + HTML) แสดงผลรายชื่อและเวลาเข้าเรียน
+- ✅ รองรับการอัปเดต Dashboard แบบ Realtime (AJAX)
+
+---
+
+## 📂 โครงสร้างโปรเจกต์
+Script_Project/
+│── dataset/ # โฟลเดอร์เก็บรูปภาพของแต่ละบุคคล
+│ ├── Worachat/ # ตัวอย่าง: รูปของ Worachat
+│ ├── Krit/ # ตัวอย่าง: รูปของ Krit
+│ └── Phuchit/ # ตัวอย่าง: รูปของ Phuchit
+│
+│── templates/ # HTML template สำหรับ Flask
+│ └── index.html
+│
+│── attendance.csv # ไฟล์บันทึกชื่อ + เวลา
+│── attendance.py # สคริปต์เปิดกล้องและบันทึกเวลา
+│── app.py # Flask Web App (Dashboard)
+│── requirements.txt # ไลบรารีที่ใช้
+│── README.md # ไฟล์อธิบายโปรเจกต์
+
+---
+
+## ⚙️ วิธีการติดตั้งและใช้งาน
+
+### 1. Clone โปรเจกต์
+```bash
+git clone https://github.com/username/Face-Recognition-Attendance-project.git
+cd Face-Recognition-Attendance-project
+```
+
+2. สร้าง Virtual Environment และติดตั้ง dependencies
+python -m venv venv
+venv\Scripts\activate   # สำหรับ Windows
+source venv/bin/activate  # สำหรับ Mac/Linux
+
+pip install -r requirements.txt
+
+
+3. เตรียม Dataset
+
+สร้างโฟลเดอร์ dataset
+
+ภายใน dataset ให้สร้างโฟลเดอร์ย่อยตามชื่อจริง-นามสกุล เช่น
+dataset/
+├── Worachat/
+│   ├── Worachat1.jpg
+├── Krit/
+│   ├── Krit1.jpg
+└── Phuchit/
+    ├── Phuchit1.jpg
+
+รันพร้อมใช้งาน
+
+
 Prompt 1
 
 
