@@ -27,6 +27,8 @@ pip install -r requirements.txt
 สร้างโฟลเดอร์ dataset
 
 ภายใน dataset ให้สร้างโฟลเดอร์ย่อยตามชื่อจริง-นามสกุล เช่น
+
+
 dataset/
 ├── Worachat/
 
