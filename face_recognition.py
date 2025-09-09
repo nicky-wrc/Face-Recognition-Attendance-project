@@ -6,13 +6,21 @@ facerec = dlib.face_recognition_model_v1("dlib_face_recognition_resnet_model_v1.
 
 def recognize_faces(image_path):
     img = cv2.imread(image_path)
+    if img is None:
+        raise FileNotFoundError(f"ไม่พบไฟล์รูป: {image_path}")
+
     detector = dlib.get_frontal_face_detector()
     faces = detector(img, 1)
+
+    if not faces:
+        print("ไม่พบใบหน้า")
+        return
 
     for face in faces:
         shape = sp(img, face)
         face_descriptor = facerec.compute_face_descriptor(img, shape)
         print("Face Descriptor:", list(face_descriptor)[:5], "...") 
 
-    if not faces:
-        print("ไม่พบใบหน้า")
+if __name__ == "__main__":
+    test_image = "test1.jpg"
+    recognize_faces(test_image)
