@@ -1,5 +1,9 @@
 # Face Recognition Attendance Project 🎥🧑‍💻
 
+Colab Test
+
+https://colab.research.google.com/drive/1fchqs636mjrRhXy4D7V-IWOlRolXe1D_?usp=sharing&fbclid=IwY2xjawMnzqtleHRuA2FlbQIxMABicmlkETFXSWhybzI3Vm9mOUlrZXdoAR4WfltLijcuhopN65Exr30ig5YICDgSSATH5U8t17jY3LzjmSbHzDoIuIHl8g_aem_8Tsq_I5Mv2UBxMLYwIqjgA#scrollTo=XIawcFsnrLJ2
+
 ระบบลงเวลาการเข้าเรียน/ทำงานด้วยการจดจำใบหน้า (Face Recognition Attendance System)  
 โปรเจกต์นี้พัฒนาด้วย **Python, dlib, OpenCV และ Flask**  
 สามารถตรวจจับใบหน้าแบบเรียลไทม์ บันทึกชื่อและเวลาเข้าเรียนไว้ในไฟล์ CSV และแสดงผลแบบ Dashboard ผ่านเว็บได้
