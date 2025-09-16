@@ -103,3 +103,49 @@ Debugger 🕵️‍♀️ : ภู
 **นิยามของคำว่า "เสร็จ" (Definition of Done)**
 
 - ตัวโปรแกรมสามารถตรวจจับและแยกใบหน้าของผู้ใช้แต่ละคนออกพร้อมแสดงชื่อได้อย่างแม่นยำ
+
+
+## 🗓️ Week 3:
+
+### เป้าหมาย
+- เขียนแก้ไฟล์หลักที่ต้องใช้จริงๆ ให้สมบูรณ์
+- บันทึกการเข้าชั้นเรียนลงไฟล์ `attendance.csv`
+- เขียนโค้ดแสดง dashbord
+
+### การแบ่งหน้าที่
+- **พี (Coder)**:
+  - เขียน html ในไฟล์ index.html
+  - เขียน app.py เพื่อดึงข้อมูลจากไฟล์ attendance.csv ไปแสดงหน้าเว็บ
+  - เขียนโค้ดไฟล์ attendance.py เป็นเวอร์ชันสมบูรณ์แบบ
+- **นิกกี้ (Planner)**:
+  - กำหนดแผนการว่าเราจำเอาข้อมูลที่ได้ไปแสดงให้คนอื่นเห็นได้ยังไงจึงเสนอให้เขียนเว็บ dashbord
+  - เขียนโครงสร้างโฟล์เดอร์โปรเจคขึ้นมาใหม่
+    ```
+    project/
+    ├─ dataset/
+      ├─Worachat
+        └─Worachat1.jpg
+      ├─Krit
+        └─Krit1.jpg
+      ├─Phuchit
+        └─Phuchit1.jpg
+    ├─ templates/
+      └─index.html
+    ├─ venv/
+    ├─app.py
+    ├─attendance.csv
+    ├─attendance.py
+    ├─camera.py
+    ├─dlib_face_recognition_resnet_model_v1.dat
+    ├─face_detection.py
+    ├─face_recognition.py
+    ├─landmarks.py
+    ├─main.py
+    ├─requirements.txt
+    ├─shape_predictor_68_face_landmarks.dat
+    └─utils.py
+    ```
+- **ภู (Debugger)**:
+  - ทดสอบระบบโค้ด html และ app.py ว่าใช้งานได้มั้ย
+  - ทดสอบ เปิดกล้อง แล้วสังเกตว่ารายชื่อถูกบันทึกไว้ที่ attendance.csv มั้ย
+  - แก้บั๊ก เมื่อแสดงรายชื่อซ้ำมากกว่า 1 รอบ
